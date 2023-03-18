@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotate and scale pictures</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="screen">
+        <div id="mustang" class="Photo_screen">
+          <img src="img/mustang.jpg" alt="Photo 1" />
+        </div>
+        <div id="porshe" class="Photo_screen">
+          <img src="img/porshe.jpg" alt="Photo 2" />
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="button_photo_1">
+          <div class="Up" >
+            <button onclick="ref1.rotate ('left')">
+                <img src="img/rotateLeft.jpg" alt="rotate_left">
+            </button>
+          </div>
+          <div class="Center" >
+            <button onclick="ref1.scale('in')">
+                <img src="img/zoomIn.jpg" alt="zoom_in">
+            </button>
+            <button onclick="ref1.reset()">
+                <img src="img/reset.jpg" alt="reset">
+            </button>
+            <button onclick="ref1.scale('out')">
+                <img src="img/zoomOut.jpg" alt="zoom_out">
+            </button>
+          </div>
+          <div class="Down" >
+            <button onclick="ref1.rotate ('right')">
+                <img src="img/rotateRight.jpg" alt="rotate_right">
+            </button>
+          </div>
+        </div>
+        <div class="button_photo_2">
+          <div class="Up" >
+            <button onclick="ref2.rotate('left')">
+                <img src="img/rotateLeft.jpg" alt="rotate_left">
+            </button>
+          </div>
+          <div class="Center" >
+            <button onclick="ref2.scale('in')">
+                <img src="img/zoomIn.jpg" alt="zoom_in">
+            </button>
+            <button onclick="ref2.reset()">
+                <img src="img/reset.jpg" alt="reset">
+            </button>
+            <button onclick="ref2.scale('out')">
+                <img src="img/zoomOut.jpg" alt="zoom_out">
+            </button>
+          </div>
+          <div class="Down" >
+            <button onclick="ref2.rotate('right')">
+                <img src="img/rotateRight.jpg" alt="rotate_right">
+            </button>
+          </div>
+        </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
